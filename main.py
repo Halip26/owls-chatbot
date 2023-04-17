@@ -15,7 +15,7 @@ def classify(text):
     else:
         response.raise_for_status()
 
-'''# GANTI INI menjadi sesuatu yang kamu inginkan untuk diklasifikasikan oleh model pembelajaran mesin kamu
+'''# GANTI INI menjadi sesuatu yang kamu inginkan untuk diklasifikasikan oleh model machine learnig kamu
 demo = classify("what foods do owls like?")
 
 label = demo["class_name"]
