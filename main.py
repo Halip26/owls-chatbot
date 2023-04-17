@@ -29,11 +29,8 @@ def answer_question():
     question = input("> ")
     answer = classify(question)
     answerclass = answer["class_name"]
-    confidance = answer["confidance"]
 
-    if confidance < 75 :
-       print("I don't understand. Ask me something else!") 
-    elif answerclass == "food":
+    if answerclass == "food":
       print ("invertebrates (such as insects, spiders, earthworms, snails and crabs), fish, reptiles, amphibians, birds and small mammals")
     elif answerclass ==  "countries":
       print ("Owls live in a variety of habitats, including coniferous forests, mountains, deserts, and plains")
@@ -43,7 +40,10 @@ def answer_question():
       print ("There are nearly 250 owl species in the world, divided into two families.")
     elif answerclass == "size":
       print ("Adult great horned owls range in length from 43 to 64 cm (17 to 25 in), with an average of 55 cm (22 in), and possess a wingspan of 91 to 153 cm (3 ft 0 in to 5 ft 0 in), with an average of 122 cm (48 in). Females are somewhat larger than males.")
+    else :
+       print("I don't understand. Ask me something else!")
 
 print("what would you like to know about owls? ")
-while True:
+# while True:
+for i in range(5):
    answer_question()
